@@ -16,6 +16,9 @@ In this case, I use [darknet->pytorch->onnx](https://github.com/Tianxiaomo/pytor
 
 # 4. Create C++ project
 a) on Visual Studio, use config the OpenCV path
+
 b) use Nuget to install Onnxruntme package, in this case, I use [GPU version](https://www.nuget.org/packages/Microsoft.ML.OnnxRuntime.gpu)
+
 c) create a project that load and postprocess the model output. hint can be found [here](https://github.com/microsoft/onnxruntime/tree/master/samples/c_cxx). for the model structure, use [netron](https://netron.app/) to observe the output.
+
 d) for CPU inferences, simply uncomment the CUDA c part
